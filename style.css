@@ -10,11 +10,9 @@ body {
     background-color: #fcfbf9; 
     color: #2c3e50;
 }
-
-
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 25px 80px;
     background-color: transparent;
@@ -60,4 +58,165 @@ body {
 
 .btn-book:hover {
     background-color: #135890;
+}
+.hero {
+    position: relative;
+    padding: 80px 80px 140px 80px;
+    background-image: url('hero-bg.jpg'); /* Papkadagi rasm nomi */
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.subtitle {
+    color: #1b75bc;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-family: 'Georgia', serif; 
+    font-size: 56px;
+    line-height: 1.15;
+    color: #0d1b2a;
+    margin-bottom: 22px;
+}
+
+.highlight {
+    color: #1b75bc;
+}
+
+.description {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Read more tugmasi */
+.btn-read {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1b75bc;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-read:hover {
+    background-color: #135890;
+}
+
+
+.booking-bar {
+    position: absolute;
+    bottom: -35px;
+    left: 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.booking-item label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a2b4c;
+}
+
+.booking-item input,
+.booking-item select {
+    border: none;
+    background: transparent;
+    color: #666666;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-search {
+    background-color: #1b75bc;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #135890;
+}
+/* =========================================
+   MOBIL VA PLANSHETLAR UCHUN MOSLASHUV
+========================================= */
+
+@media (max-width: 992px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        padding: 60px 30px 180px 30px;
+        background-position: center;
+    }
+
+    .booking-bar {
+        left: 30px;
+        right: 30px;
+        gap: 20px;
+        flex-wrap: wrap; 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .main-title {
+        font-size: 38px;
+    }
+
+
+    .booking-bar {
+        position: static; 
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .hero {
+        padding-bottom: 50px;
+    }
 }
