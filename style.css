@@ -220,3 +220,62 @@ body {
         padding-bottom: 50px;
     }
 }
+/* Features bo'limi dizayni */
+.features {
+    padding: 80px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666666;
+    font-size: 16px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #fcfbf9;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px); /* Kursor borganda biroz yuqoriga ko'tariladi */
+}
+
+.feature-card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #0d1b2a;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
